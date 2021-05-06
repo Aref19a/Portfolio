@@ -1,0 +1,97 @@
+git<!DOCTYPE html>
+<html class="" lang="en">
+    <script>
+        if (localStorage.theme === 'dark' || (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.querySelector('html').classList.add('dark')
+        } else if (localStorage.theme === 'dark') {
+            document.querySelector('html').classList.add('dark')
+        }
+    </script>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link href="styles.css" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body class="flex flex-col bg-gray-200 dark:bg-gray-700 max-h-screen">
+
+        <button id="switchTheme" class="flex mx-auto pt-3 h-10 w-10 flex justify-center items-center focus:outline-none text-gray-800 dark:text-white">
+            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
+        </button>
+
+        <div class="container flex mx-auto h-screen">
+            <div class="m-auto shadow-lg text-2xl bg-gray-100 max-w-xs rounded-lg dark:bg-gray-800">
+                <div class="px-5 ">
+                    <div class="flex mx-auto flex-col w-full bg-gradient-to-br from-purple-600 to-indigo-600 px-16 pt-3 pb-6 rounded-lg rounded-b-full shadow-md mx-4 ">
+                        <div class=" m-auto rounded-full h-24 w-24 gray-100 mb-2 shadow-md ark:bg-gray-700">
+                            <img alt="" class="rounded-full"
+                                 src="Image.jpeg"></div>
+                        <span class="text-white font-bold mx-auto">AREF.DEV</span>
+                    </div>
+
+                    <div class="flex flex-col text-center text-lg py-4">
+                        <div class="mx-auto pb-4 dark:text-white">Hello There!
+                            I’m Aref and I like to <span class="font-bold">Design</span> & <span
+                                    class="font-bold">Build</span> interactive experiences for web and mobile.
+                        </div>
+                        <div class="mx-auto dark:text-white">Feel free to check out my resume & reach out to me for any inquiries!
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row pb-4">
+                        <div class="mx-auto self-center bg-gradient-to-br from-purple-600 to-indigo-600 p-3 rounded-md ">
+                            <a href="https://www.linkedin.com/in/arefabdi/" target="_blank">
+                                <svg class="h-7 w-7 text-white" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                          d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                                          fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="mx-auto self-center bg-gradient-to-br from-purple-600 to-indigo-600 p-3 rounded-md">
+                            <a href="https://www.google.com" target="_blank">
+                                <svg class="h-7 w-7 text-white" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                          d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                                          fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="mx-auto self-center bg-gradient-to-br from-purple-600 to-indigo-600 p-3 rounded-md">
+                            <a href="mailto:aref.abdi@dal.ca" target="_blank">
+                                <svg class="h-7 w-7 text-white" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-auto py-2 text-2xl max-w-xs overflow-hidden bg-gradient-to-br from-purple-600 to-indigo-600 rounded-b-lg">
+                    <div class="flex flex-col text-center text-sm font-semibold text-white">Updated Website
+                        Coming
+                        Soon!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        document.getElementById('switchTheme').addEventListener('click', function() {
+            let htmlClasses = document.querySelector('html').classList;
+            if(localStorage.theme == 'dark') {
+                htmlClasses.remove('dark');
+                localStorage.removeItem('theme')
+            } else {
+                htmlClasses.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</html>
